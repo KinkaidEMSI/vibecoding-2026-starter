@@ -1,0 +1,29 @@
+{
+  "name": "VibeCoding 2026",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "Google.geminicodeassist",
+        "ecmel.vscode-html-css",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.fontSize": 15,
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+        "git.enableSmartCommit": false,
+        "git.confirmSync": false,
+        "liveServer.settings.donotShowInfoMsg": true,
+        "workbench.startupEditor": "none"
+      }
+    }
+  },
+  "forwardPorts": [5500],
+  "postCreateCommand": "echo '✅ Ready. Open index.html → right-click → Open with Live Server.'"
+}
